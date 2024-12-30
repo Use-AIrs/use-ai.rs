@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = [
+    # -- Core
+    "crates/core-ai/lib-core",      # e.g., dataset.rs, tensor.rs, model.rs, utilitys...
+    "crates/core-ai/lib-gpu",       # e.g., different tree models. At first a GBDT.
+    "crates/core-ai/lib-test",      # Test Enviorment
+
+    # -- API
+    "crates/api-ai/lib-model",       # Modelmanagment
+    "crates/api-ai/lib-staging",     # Staging tool
+
+    # -- Examples
+    "crates/example",
+]
